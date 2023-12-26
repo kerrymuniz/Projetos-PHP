@@ -7,7 +7,7 @@
         public $humor = 'Feliz';
 
         //métodos get e set
-        /*public function __get($atributo)
+        public function __get($atributo)
         {
             return $this->$atributo;
         }
@@ -15,7 +15,7 @@
         public function __set($atributo, $valor)
         {
             $this->$atributo = $valor;
-        }*/
+        }
 
         private function executarMania()
         {
@@ -50,8 +50,7 @@
     print_r($filho);
     echo '<pre>';
     //echo $filho->getAtributo('nome');
-    echo '<br>';
-    $filho->setAtributo('nome', 'Junior');
-    echo $filho->getAtributo('nome');
+    
+    $filho->executarAcao();
 
 ?>
