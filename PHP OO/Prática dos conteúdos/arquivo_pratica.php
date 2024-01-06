@@ -27,6 +27,6 @@
         }
     }
 
-    $quarto = new \PraticarConteudo\Quarto
+    $quarto = new \PraticarConteudo\Quarto();
 
 ?>
