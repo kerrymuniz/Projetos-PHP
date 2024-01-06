@@ -82,6 +82,6 @@
     echo 'Estado do quarto: ' . '<strong>'.$quarto->limparQuarto('Limpo').'</strong>';
 
     echo '<br><br>';
-    //unset($quarto);
+    unset($quarto);
 
 ?>
