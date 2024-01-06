@@ -34,6 +34,7 @@
     $quarto = new \PraticarConteudoClassQuarto\Quarto('bancada', 'janela', 'cama', 'guarda roupa');
     echo $quarto->__get('bancada');
     $funcoesQuarto = new \PraticarConteudoClassFuncoesQuarto\FuncoesQuarto();
+    echo '<br>';
     $funcoesQuarto->deitar();
 
 ?>
