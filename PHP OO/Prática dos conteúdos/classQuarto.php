@@ -86,6 +86,7 @@
     echo 'Estado da Porta do quarto: ' . '<strong>'.$quarto->abrirFecharPorta('Aberta').'</strong>';
     echo '<br>';
     echo 'Estado do quarto: ' . '<strong>'.$quarto->limparQuarto('Limpo').'</strong>';
+    echo '<br>';
     echo 'Estado da cama: ' . '<strong>'.Quarto::forrarCama('Cama forrada').'</strong>';
 
     echo '<br><br>';
