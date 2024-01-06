@@ -49,7 +49,7 @@
     echo '<br>';
     echo $funcoesQuarto->abrirJanela() . ' -> Ação a se fazer no quarto.';
     echo '<br>';
-    echo $funcoesQuarto->abrirJanela() . ' -> Ação a se fazer no quarto.';
+    echo $quarto->abrirJanela() . ' -> Ação a se fazer no quarto.';
     echo '<br>';
     echo $funcoesQuarto->organizarGuardaRoupa() . ' -> Ação a se fazer no quarto.';
     echo '<br>';
