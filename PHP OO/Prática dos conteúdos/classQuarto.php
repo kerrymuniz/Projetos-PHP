@@ -30,6 +30,6 @@
 
     $quarto = new \PraticarConteudoClassQuarto\Quarto('bancada', 'janela', 'cama', 'guarda roupa');
     echo $quarto->__get('bancada');
-    $funcoesQuarto = new FuncoesQuarto();
+    $funcoesQuarto = new \PraticarConteudoClassFuncoesQuarto\FuncoesQuarto();
 
 ?>
