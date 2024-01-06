@@ -55,7 +55,7 @@
 
         public static function forrarCama($estadoCama)
         {
-            return $this->estadoCama = $estadoCama;
+            return $estadoCama;
         }
 
         public function abrirJanela()
