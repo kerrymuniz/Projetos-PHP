@@ -28,5 +28,6 @@
     }
 
     $quarto = new \PraticarConteudo\Quarto('bancada', 'janela', 'cama', 'guarda roupa');
+    echo $quarto->__get('bancada');
 
 ?>
