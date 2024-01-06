@@ -51,6 +51,7 @@
     echo '<br>';
     echo $funcoesQuarto->organizarBancada() . ' -> Ação a se fazer no quarto.';
 
+    echo '<br><br>';
     unset($quarto);
 
 ?>
