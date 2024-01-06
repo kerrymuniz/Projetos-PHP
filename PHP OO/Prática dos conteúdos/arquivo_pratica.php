@@ -8,12 +8,9 @@
         private $cama;
         protected $guardaRoupa;
 
-        function __construct($bancada, $janela, $cama, $guardaRoupa)
+        function __construct($attr)
         {
-            $this->bancada = $bancada;
-            $this->janela = $janela;
-            $this->cama = $cama;
-            $this->guardaRoupa = $guardaRoupa;
+            $this->$attr = $attr;
         }
 
         //métodos mágicos
