@@ -59,8 +59,8 @@
     }
 
     $quarto = new \PraticarConteudoClassQuarto\Quarto('bancada', 'janela', 'cama', 'guarda roupa');
-    echo $quarto->__get('bancada') . ' -> Objeto do quarto.';
     $funcoesQuarto = new \PraticarConteudoClassFuncoesQuarto\FuncoesQuarto();
+    echo $quarto->__get('bancada') . ' -> Objeto do quarto.';
     echo '<br>';
     echo $funcoesQuarto->deitar() . ' -> Ação a se fazer no quarto.';
     echo '<br>';
