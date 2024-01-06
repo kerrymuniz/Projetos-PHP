@@ -1,6 +1,6 @@
 <?php
 
-    namespace PraticarConteudo;
+    namespace PraticarConteudoClassQuarto;
 
     class Quarto {
         public $bancada;
@@ -25,9 +25,11 @@
         {
             return $this->$attr;
         }
+
     }
 
-    $quarto = new \PraticarConteudo\Quarto('bancada', 'janela', 'cama', 'guarda roupa');
+    $quarto = new \PraticarConteudoClassQuarto\Quarto('bancada', 'janela', 'cama', 'guarda roupa');
     echo $quarto->__get('bancada');
+    $funcoesQuarto = new FuncoesQuarto();
 
 ?>
