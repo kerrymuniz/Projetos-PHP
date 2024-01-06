@@ -8,6 +8,7 @@
     interface FuncoesQuartoInterface {
         public function abrirFecharPorta($abrirFecharPorta);
         public function limparQuarto($estadoLimpeza);
+        public static function forrarCama($estadoCama);
     }
 
     class Quarto implements FuncoesQuartoInterface{
@@ -51,6 +52,11 @@
             return $this->estadoLimpeza = $estadoLimpeza;
         }
 
+        public static function forrarCama($estadoCama)
+        {
+            return $this->estadoCama = $estadoCama;
+        }
+
         public function abrirJanela()
         {
             echo 'abrir janela e depois fechá-la';
@@ -80,6 +86,7 @@
     echo 'Estado da Porta do quarto: ' . '<strong>'.$quarto->abrirFecharPorta('Aberta').'</strong>';
     echo '<br>';
     echo 'Estado do quarto: ' . '<strong>'.$quarto->limparQuarto('Limpo').'</strong>';
+    echo 'Estado da cama: ' . '<strong>'.Quarto::forrarCama('Cama forrada').'</strong>';
 
     echo '<br><br>';
     unset($quarto);
