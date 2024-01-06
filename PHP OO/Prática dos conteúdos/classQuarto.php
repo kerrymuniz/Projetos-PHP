@@ -77,7 +77,7 @@
     
     //chamando funções das interfaces
     echo '<br>';
-    echo 'Estado da Porta do quarto: ' . $quarto->abrirFecharPorta('Aberta');
+    echo 'Estado da Porta do quarto: ' . '<strong>'.$quarto->abrirFecharPorta('Aberta').'</strong>';
 
     echo '<br><br>';
     //unset($quarto);
