@@ -49,6 +49,8 @@
     echo '<br>';
     echo $funcoesQuarto->abrirJanela() . ' -> Ação a se fazer no quarto.';
     echo '<br>';
+    echo $funcoesQuarto->abrirJanela() . ' -> Ação a se fazer no quarto.';
+    echo '<br>';
     echo $funcoesQuarto->organizarGuardaRoupa() . ' -> Ação a se fazer no quarto.';
     echo '<br>';
     echo $quarto->__set('guardaRoupa', 'Tirar roupas do guarda-roupa');
