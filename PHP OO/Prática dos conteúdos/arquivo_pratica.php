@@ -3,14 +3,15 @@
     namespace PraticarConteudo;
 
     class Quarto {
+        public $estadoQuarto;
         public $bancada;
         public $janela;
         private $cama;
         protected $guardaRoupa;
 
-        function __construct($attr)
+        function __construct($estadoQuarto)
         {
-            $this->$attr = $attr;
+            $this->estadoQuarto = $estadoQuarto;
         }
 
         //métodos mágicos
