@@ -19,6 +19,11 @@
             $this->guardaRoupa = $guardaRoupa;
         }
 
+        function __destruct()
+        {
+            echo 'Encerrando objeto criado.';
+        }
+
         //métodos mágicos
         function __set($attr, $value)
         {
@@ -45,5 +50,7 @@
     echo $quarto->__get('guardaRoupa') . ' -> Fazendo uma acção com o objeto do quarto.';
     echo '<br>';
     echo $funcoesQuarto->organizarBancada() . ' -> Ação a se fazer no quarto.';
+
+    unset($quarto);
 
 ?>
