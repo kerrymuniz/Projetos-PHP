@@ -18,7 +18,6 @@
         protected $guardaRoupa;
         public $estadoPorta;
         public $estadoLimpeza;
-        public $estadoCama;
 
         function __construct($bancada, $janela, $cama, $guardaRoupa)
         {
