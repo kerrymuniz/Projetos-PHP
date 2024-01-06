@@ -3,7 +3,7 @@
     namespace PraticarConteudoClassQuarto;
 
     require 'classFuncoesQuarto.php';
-    use PraticarConteudoClassFuncoesQuarto\FuncoesQuarto;
+    //use PraticarConteudoClassFuncoesQuarto\FuncoesQuarto;
 
     class Quarto {
         public $bancada;
@@ -34,5 +34,6 @@
     $quarto = new \PraticarConteudoClassQuarto\Quarto('bancada', 'janela', 'cama', 'guarda roupa');
     echo $quarto->__get('bancada');
     $funcoesQuarto = new \PraticarConteudoClassFuncoesQuarto\FuncoesQuarto();
+    $funcoesQuarto->deitar();
 
 ?>
