@@ -6,8 +6,8 @@
     //use PraticarConteudoClassFuncoesQuarto\FuncoesQuarto;
 
     interface FuncoesQuartoInterface {
-        public function abrirFecharPorta();
-        public function limparQuarto();
+        public function abrirFecharPorta($abrirFecharPorta);
+        public function limparQuarto($estadoLimpeza);
     }
 
     class Quarto implements FuncoesQuartoInterface{
