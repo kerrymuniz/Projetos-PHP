@@ -34,6 +34,11 @@
             return $this->$attr;
         }
 
+        public function abrirJanela()
+        {
+            echo 'abrir janela e depois fechá-la';
+        }
+
     }
 
     $quarto = new \PraticarConteudoClassQuarto\Quarto('bancada', 'janela', 'cama', 'guarda roupa');
