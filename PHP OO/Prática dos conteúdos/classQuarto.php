@@ -42,8 +42,8 @@
     $funcoesQuarto->organizarGuardaRoupa() . ' -> Ação a se fazer no quarto.';
     echo '<br>';
     $quarto->__set('guardaRoupa', 'Tirar roupas do guarda-roupa');
-    $quarto->__get('guardaRoupa');
+    $quarto->__get('guardaRoupa') . ' -> Fazendo uma acção com o objeto do quarto.';
     echo '<br>';
-    $funcoesQuarto->organizarBancada();
+    $funcoesQuarto->organizarBancada() . ' -> Ação a se fazer no quarto.';
 
 ?>
