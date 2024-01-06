@@ -74,8 +74,12 @@
     echo $quarto->__get('guardaRoupa') . ' -> Fazendo uma acção com o objeto do quarto.';
     echo '<br>';
     echo $funcoesQuarto->organizarBancada() . ' -> Ação a se fazer no quarto.';
+    
+    //chamando funções das interfaces
+    echo '<br>';
+    echo 'Estado da Porta do quarto: ' . $quarto->abrirFecharPorta('Aberta');
 
     echo '<br><br>';
-    unset($quarto);
+    //unset($quarto);
 
 ?>
