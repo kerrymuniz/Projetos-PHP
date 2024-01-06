@@ -32,14 +32,17 @@
     }
 
     $quarto = new \PraticarConteudoClassQuarto\Quarto('bancada', 'janela', 'cama', 'guarda roupa');
-    echo $quarto->__get('bancada');
+    echo $quarto->__get('bancada') . ' -> Objeto do quarto.';
     $funcoesQuarto = new \PraticarConteudoClassFuncoesQuarto\FuncoesQuarto();
     echo '<br>';
-    $funcoesQuarto->deitar();
+    $funcoesQuarto->deitar() . ' -> Ação a se fazer no quarto.';
     echo '<br>';
-    $funcoesQuarto->abrirJanela();
+    $funcoesQuarto->abrirJanela() . ' -> Ação a se fazer no quarto.';
     echo '<br>';
-    $funcoesQuarto->organizarGuardaRoupa();
+    $funcoesQuarto->organizarGuardaRoupa() . ' -> Ação a se fazer no quarto.';
+    echo '<br>';
+    $quarto->__set('guardaRoupa', 'Tirar roupas do guarda-roupa');
+    $quarto->__get('guardaRoupa');
     echo '<br>';
     $funcoesQuarto->organizarBancada();
 
