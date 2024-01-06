@@ -2,7 +2,7 @@
 
     namespace PraticarConteudoClassQuarto;
 
-    //require 'classFuncoesQuarto.php';
+    require 'classFuncoesQuarto.php';
     use PraticarConteudoClassFuncoesQuarto\FuncoesQuarto;
 
     class Quarto {
