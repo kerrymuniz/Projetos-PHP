@@ -10,7 +10,7 @@
         public function limparQuarto();
     }
 
-    class Quarto {
+    class Quarto implements FuncoesQuartoInterface{
         public $bancada;
         public $janela;
         private $cama;
