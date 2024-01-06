@@ -5,6 +5,11 @@
     require 'classFuncoesQuarto.php';
     //use PraticarConteudoClassFuncoesQuarto\FuncoesQuarto;
 
+    interface FuncoesQuartoInterface {
+        public function abrirFecharPorta();
+        public function limparQuarto();
+    }
+
     class Quarto {
         public $bancada;
         public $janela;
