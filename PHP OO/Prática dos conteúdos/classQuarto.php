@@ -43,6 +43,7 @@
     echo '<br>';
     echo $quarto->__set('guardaRoupa', 'Tirar roupas do guarda-roupa');
     echo $quarto->__get('guardaRoupa') . ' -> Fazendo uma acção com o objeto do quarto.';
+    echo '<br>';
     echo $funcoesQuarto->organizarBancada() . ' -> Ação a se fazer no quarto.';
 
 ?>
