@@ -16,8 +16,9 @@
         public $janela;
         private $cama;
         protected $guardaRoupa;
-        public $abrirFecharPorta;
+        public $estadoPorta;
         public $estadoLimpeza;
+        public $estadoCama;
 
         function __construct($bancada, $janela, $cama, $guardaRoupa)
         {
@@ -42,9 +43,9 @@
             return $this->$attr;
         }
 
-        public function abrirFecharPorta($abrirFecharPorta)
+        public function abrirFecharPorta($estadoPorta)
         {
-            return $this->abrirFecharPorta = $abrirFecharPorta;
+            return $this->estadoPorta = $estadoPorta;
         }
 
         public function limparQuarto($estadoLimpeza)
