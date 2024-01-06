@@ -36,5 +36,11 @@
     $funcoesQuarto = new \PraticarConteudoClassFuncoesQuarto\FuncoesQuarto();
     echo '<br>';
     $funcoesQuarto->deitar();
+    echo '<br>';
+    $funcoesQuarto->abrirJanela();
+    echo '<br>';
+    $funcoesQuarto->organizarGuardaRoupa();
+    echo '<br>';
+    $funcoesQuarto->organizarBancada();
 
 ?>
