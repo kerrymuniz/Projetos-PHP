@@ -3,7 +3,7 @@
     namespace PraticarConteudo;
 
     class Quarto {
-        public $estadoQuarto;
+        public $estadoQuarto = null;
         public $bancada;
         public $janela;
         private $cama;
