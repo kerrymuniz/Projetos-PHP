@@ -1,8 +1,8 @@
 <?php
 
     namespace PraticarConteudoClassQuarto;
-    
-    require 'classQuarto.php';
+
+    require 'classFuncoesQuarto.php';
 
     class Quarto {
         public $bancada;
