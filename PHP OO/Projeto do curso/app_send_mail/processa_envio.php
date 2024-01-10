@@ -1,8 +1,8 @@
 <?php
 
-    echo '<pre>';
-    print_r($_POST);
-    echo '<pre>';
+    // echo '<pre>';
+    // print_r($_POST);
+    // echo '<pre>';
 
     class Mensagem {
         private $para = null;
@@ -30,6 +30,6 @@
     $mensagem->__set('para', $_POST['para']);
     $mensagem->__set('assunto', $_POST['assunto']);
     $mensagem->__set('mensagem', $_POST['mensagem']);
-    print_r($mensagem);
+    //print_r($mensagem);
 
 ?>
