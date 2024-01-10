@@ -1,10 +1,10 @@
 <?php
 
-    require "./PHP OO/Projeto do curso/app_send_mail/bibliotecas/PHPMailer/Exception.php";
-    require "./PHP OO/Projeto do curso/app_send_mail/bibliotecas/PHPMailer/OAuth.php";
-    require "./PHP OO/Projeto do curso/app_send_mail/bibliotecas/PHPMailer/PHPMailer.php";
-    require "./PHP OO/Projeto do curso/app_send_mail/bibliotecas/PHPMailer/POP3.php";
-    require "./PHP OO/Projeto do curso/app_send_mail/bibliotecas/PHPMailer/SMTP.php";
+    require "../PHP OO/Projeto do curso/app_send_mail/bibliotecas/PHPMailer/Exception.php";
+    require "../PHP OO/Projeto do curso/app_send_mail/bibliotecas/PHPMailer/OAuth.php";
+    require "../PHP OO/Projeto do curso/app_send_mail/bibliotecas/PHPMailer/PHPMailer.php";
+    require "../PHP OO/Projeto do curso/app_send_mail/bibliotecas/PHPMailer/POP3.php";
+    require "../PHP OO/Projeto do curso/app_send_mail/bibliotecas/PHPMailer/SMTP.php";
 
     // echo '<pre>';
     // print_r($_POST);
