@@ -21,7 +21,12 @@
 
         public function mensagemValida()
         {
+            if(empty($this->para) || empty($this->assunto) || empty($this->mensagem))
+            {
+                return false;
+            }
 
+            return true;
         }
     }
 
@@ -31,5 +36,12 @@
     $mensagem->__set('assunto', $_POST['assunto']);
     $mensagem->__set('mensagem', $_POST['mensagem']);
     //print_r($mensagem);
+
+    if($mensagem->mensagemValida())
+    {
+        echo 'Mensagem é válida';
+    } else {
+        echo 'Mensagem inválida';
+    }
 
 ?>
