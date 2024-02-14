@@ -41,7 +41,7 @@
                     <?php
                         //incluindo conexão com o banco
                         include("config.php");
-                        
+
                         //recuperando a partir da request a página("page") e setando parâmetros "novo" ou "listar" para fazer o include
                         switch(@$_REQUEST["page"]) {
                             case "novo":
@@ -49,6 +49,9 @@
                                 break;
                             case "listar":
                                 include("listar-usuario.php");
+                                break;
+                            case "salvar":
+                                include("salvar-usuario.php");
                                 break;
                             default:
                                 print "<h1>Bem vindos!</h1>";
