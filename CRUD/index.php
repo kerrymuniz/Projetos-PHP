@@ -54,7 +54,7 @@
                                 include("salvar-usuario.php");
                                 break;
                             case "editar":
-                                include("editar-usuario");
+                                include("editar-usuario.php");
                                 break;
                             default:
                                 print "<h1>Bem vindos!</h1>";

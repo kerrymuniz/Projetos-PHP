@@ -25,8 +25,8 @@
                 echo "<td>" . $row["Email"] . "</td>";
                 echo "<td>" . $row["Data_nasc"] . "</td>";
                 echo "<td>
-                        <button oneclick=\"location.href='?page=editar&id=". $row["Id"] . "';\" class='btn btn-success'>Editar</button>
-                        <button class='btn btn-danger'>Excluir</button>
+                        <button onclick=\"location.href='?page=editar&id=". $row["Id"] . "';\" class='btn btn-success'>Editar</button>
+                        <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=salvar&acao=excluir&id=". $row["Id"] . "';} else{false;}\" class='btn btn-danger'>Excluir</button>
                     </td>";
                 echo "</tr>";
             }

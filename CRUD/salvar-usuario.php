@@ -20,10 +20,41 @@
             }
             break;
         case 'editar':
-            //code
+            $nome = $_POST["nome"];
+            $email = $_POST["email"];
+            $senha = md5($_POST["senha"]);
+            $data_nasc = $_POST["data_nasc"];
+
+            $sql = "UPDATE usuarios SET
+                        Nome='{$nome}',
+                        Email='{$email}',
+                        Senha='{$senha}',
+                        Data_nasc='{$data_nasc}'
+                    WHERE
+                        id=".$_REQUEST["id"];
+
+            $result = $conexao->query($sql);
+
+            if($result == true) {
+                print "<script>alert('Editado com sucesso');</script>";
+                print "<script>location.href='?page=listar';</script>";
+            } else {
+                print "<script>alert('Não foi possível editar. Por favor tentar novamente..');</script>";
+                print "<script>location.href='?page=listar';</script>";
+            }
             break;
         case 'excluir';
-            //code
+            $sql = "DELETE FROM usuarios WHERE id=".$_REQUEST["id"];
+
+            $result = $conexao->query($sql);
+
+            if($result == true) {
+                print "<script>alert('Usuário excluído com sucesso');</script>";
+                print "<script>location.href='?page=listar';</script>";
+            } else {
+                print "<script>alert('Não foi possível excluir o usuário. Por favor tentar novamente..');</script>";
+                print "<script>location.href='?page=listar';</script>";
+            }
             break;
     }
 
